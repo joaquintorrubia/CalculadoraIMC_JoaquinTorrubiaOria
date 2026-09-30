@@ -12,4 +12,20 @@ public class CalculadoraIMC {
     public double calcular(double peso, double altura) {
         return peso / (altura * altura);
     }
+    
+    public String clasificar(double imc) {
+    String clasificacion;
+
+    if (imc < 18.5) {
+        clasificacion = "Bajo Peso";
+    } else if (imc < 25.0) {
+        clasificacion = "Peso Normal";
+    } else if (imc < 30.0) {
+        clasificacion = "Sobrepeso";
+    } else {
+        clasificacion = "Obesidad";
+    }
+
+    return clasificacion;
+}
 }
