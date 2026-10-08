@@ -13,12 +13,11 @@ import javax.swing.JTextField;
  * @author joaquin Torrubia Oria
  */
 public class IMCView extends javax.swing.JFrame {
-    
+
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(IMCView.class.getName());
 
     private IMCController controlador;
-    
-    
+
     /**
      * Creates new form IMCView
      */
@@ -115,21 +114,19 @@ public class IMCView extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+// generado por Matisse por el boton action
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
-       controlador.calcularIMC();
+        controlador.calcularIMC();
     }//GEN-LAST:event_btnCalcularActionPerformed
-
+// generados por Matisse. no ulizados
     private void txtAlturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAlturaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtAlturaActionPerformed
-
+// generados por Matisse. no ulizados
     private void txtPesoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPesoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtPesoActionPerformed
 
-   
-   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCalcular;
@@ -143,7 +140,7 @@ public class IMCView extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     public JTextField getTxtPeso() {
-       return txtPeso; // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return txtPeso; // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     public JTextField getTxtAltura() {
@@ -151,14 +148,14 @@ public class IMCView extends javax.swing.JFrame {
     }
 
     public JLabel getLblResultado() {
-       return lblResultado; // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return lblResultado; // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     public JLabel getLblClasificacion() {
         return lblClasificacion; // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-
-   public void setControlador(IMCController controlador) {
-    this.controlador = controlador; // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-}
+         //guarda el controlador en la vista
+    public void setControlador(IMCController controlador) {
+        this.controlador = controlador; // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
