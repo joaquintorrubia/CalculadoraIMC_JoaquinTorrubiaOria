@@ -7,22 +7,18 @@ package com.tuproyecto.imc.main;
 import com.tuproyecto.imc.controller.IMCController;
 import com.tuproyecto.imc.view.IMCView;
 
-
-
 /**
  *
  * @author Joaquin Torrubia Oria
  */
 public class Main {
 
-  
     public static void main(String[] args) {
-     
-       IMCView vista = new IMCView();
-        new IMCController(vista);
-        vista.setVisible(true);
 
-        
+        IMCView vista = new IMCView(); // crea la ventana vista
+        new IMCController(vista); // crea el controlador y le pasa la vista
+        vista.setVisible(true); // para que la ventana sea visible
+
     }
-    
+
 }
