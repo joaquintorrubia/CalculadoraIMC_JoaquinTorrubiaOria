@@ -10,11 +10,11 @@ package com.tuproyecto.imc.model;
  * @author joaquin Torrubia Oria
  */
 public class CalculadoraIMC {
-    
+    // formula 
     public double calcular(double peso, double altura) {
         return peso / (altura * altura);
     }
-    
+    //Segun el imc devolvera la clasificacion
     public String clasificar(double imc) {
     String clasificacion;
 
